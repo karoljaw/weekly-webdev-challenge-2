@@ -1,0 +1,327 @@
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.header {
+    background-image: url("img/header-background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.navbar {
+    z-index: 1;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background:rgba(255,255,255, 0.8);
+    color: #262626;
+    font-weight: 700;
+    background-color: transparent;
+    transition: 0.5s;
+}
+
+.navbar-brand {
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+    transition: 0.5s;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #262626;
+}
+
+.active {
+    border-top: 3px solid #ff6030;
+}
+
+.header-heading {
+    color:  #262626;
+    font-size: 60px;
+    font-weight: 800;
+    padding-top: 200px;
+}
+
+.header-paragraph {
+    color:  #262626;
+    font-size: 17px;
+    font-weight: 300;
+    max-width: 350px;
+}
+
+.button {
+    background-color:  #ff6033;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+    border: 0;
+    color:  #ffffff;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 10px 15px;
+}
+
+.scroll {
+    bottom: 30px;
+    left: 50%;
+    transform: translateY(-12px);
+}
+
+.about {
+    background-color: #00c4c4;
+}
+
+.about-heading {
+    color:  #fff;
+    font-size: 90px;
+    font-weight: 700;
+}
+
+.about-paragraph {
+    color:  #ffffff;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.services {
+    background-color:  #70bfff;
+}
+
+.services-heading {
+    color:  #ffffff;
+    font-size: 90px;
+    font-weight: 700;
+    z-index: 1;
+    top: 40%;
+}
+
+.services-item {
+    max-width: 400px;
+    height: 100px;
+    background-color: #fff;
+    padding: 25px;
+}
+
+.services-item-text {
+    color:  #262626;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 0;
+    flex: 1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery {
+    background-color: #ffe92f;
+}
+
+.gallery-header {
+    color:  #262626;
+    font-size: 90px;
+    font-weight: 700;
+}
+
+.gallery-paragraph {
+    color:  #262626;
+    font-size: 17px;
+    font-weight: 300;
+    max-width: 577px;
+    margin: 0 auto;
+}
+
+.gallery-image {
+    width: 100%;
+}
+
+.button-blue {
+   background-color: #5585a2;
+}
+
+.button-green {
+    background-color: #96b92c;
+ }
+
+.button-uppercase {
+    text-transform: uppercase;
+}
+
+.subscribe {
+    background-image: url("img/subscribe-background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+}
+
+.subscribe-heading {
+    color:  #262626;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.subscribe-paragraph {
+    max-width: 540px;
+    color:  #262626;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+input[type=email] {
+    flex: 1;
+    border: 1px solid #262626;
+    height: 55px;
+    padding: 10px;
+}
+
+.blog {
+    background-color: #b07cf7;
+}
+
+.blog-heading {
+    color:  #ffffff;
+    font-size: 90px;
+    font-weight: 700;
+}
+
+.blog-paragraph {
+    color:  #ffffff;
+    font-size: 17px;
+    font-weight: 300;
+    max-width: 563px;
+}
+
+.date {
+    top: 30px;
+    left: 40px;
+}
+
+.image-text {
+    color: #fff;
+    max-width: 300px;
+    bottom: 10px;
+    left: 40px;
+}
+
+.image-text-bold {
+    color:  #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.contact {
+    background-image: url("img/contact-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.contact-heading {
+    color:  #262626;
+    font-size: 90px;
+    font-weight: 700;
+}
+
+.contact-text {
+    color:  #262626;
+    font-size: 17px;
+    font-weight: 300;
+    max-width: 360px;
+    margin: 0 auto;
+}
+
+.contact-text-bold {
+    color:  #262626;
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.contact-text-light {
+    font-weight: 300;
+}
+
+input, select, textarea {
+    background-color: rgba(0, 196, 196, 0.5);
+    border: none;
+}
+
+input, textarea {
+    max-width: 500px;
+    height: 50px;
+}
+
+.form-control {
+    background-color: rgba(0, 196, 196, 0.5);
+    min-height: 50px;
+    padding: 20px;
+    padding-left: 16px;
+    border: 0;
+    border-left: 4px solid transparent;
+    border-radius: 0;
+    margin-top: 15px;
+    transition: 0.3s;
+    color: white;
+    outline: none; 
+}
+
+.form-control:hover, 
+.form-control:focus {
+    font-weight: bold;
+    background-color: rgba(0, 196, 196, 0.5);
+}
+
+.form-control:focus {
+    border-left: 4px solid  #355b82; 
+    outline: none; 
+}
+
+input[type=email] {
+    border: none;
+}
+
+.footer {
+    min-height: 90px;
+    background-color: #262626;
+}
+
+.copyright {
+    color:  #b9b9b9;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0;
+    padding-top: 30px;
+}
+
+.footer-text {
+    color: #b9b9b9;
+    font-size: 15px;
+    font-weight: 300;
+    margin: 0;
+    padding-top: 30px;
+}
+
+.footer-img {
+    padding-top: 30px;
+}
+
+.pink {
+    color: #f72b3b;
+}
+
+.full-height {
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
