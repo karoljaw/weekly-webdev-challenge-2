@@ -4,8 +4,7 @@ body {
 
 .header {
     background-image: url("img/header-background.png");
-    background-position: center;
-    background-repeat: no-repeat;
+    background-position: cover;
     height: 100vh;
 }
 
@@ -15,7 +14,7 @@ body {
     top: 50px;
     left: 0;
     width: 100%;
-    background:rgba(255,255,255, 0.8);
+    background: rgba(255, 255, 255, 0.8);
     color: #262626;
     font-weight: 700;
     background-color: transparent;
@@ -32,29 +31,44 @@ body {
     color: #262626;
 }
 
-.active {
-    border-top: 3px solid #ff6030;
+@media (min-width: 992px) {
+    .active {
+        border-top: 3px solid #ff6030;
+    }
 }
 
-.header-heading {
-    color:  #262626;
-    font-size: 60px;
+.section__heading {
+    color: #262626;
+    font-size: 50px;
     font-weight: 800;
-    padding-top: 200px;
 }
 
-.header-paragraph {
-    color:  #262626;
+@media (min-width: 992px) {
+    .section__heading {
+        font-size: 90px
+    }
+}
+
+.section__heading-white {
+    color: #fff;
+}
+
+.section__text {
+    color: #262626;
     font-size: 17px;
     font-weight: 300;
-    max-width: 350px;
+    max-width: 500px;
+}
+
+.section__text-white {
+    color: #fff;
 }
 
 .button {
-    background-color:  #ff6033;
+    background-color: #ff6033;
     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
     border: 0;
-    color:  #ffffff;
+    color: #ffffff;
     font-size: 20px;
     font-weight: 300;
     padding: 10px 15px;
@@ -70,28 +84,22 @@ body {
     background-color: #00c4c4;
 }
 
-.about-heading {
-    color:  #fff;
-    font-size: 90px;
-    font-weight: 700;
-}
-
-.about-paragraph {
-    color:  #ffffff;
-    font-size: 17px;
-    font-weight: 300;
-}
-
 .services {
-    background-color:  #70bfff;
+    background-color: #70bfff;
 }
 
 .services-heading {
-    color:  #ffffff;
-    font-size: 90px;
+    color: #ffffff;
+    font-size: 50px;
     font-weight: 700;
     z-index: 1;
     top: 40%;
+}
+
+@media (min-width: 992px) {
+    .services-heading {
+        font-size: 90px;
+    }
 }
 
 .services-item {
@@ -102,7 +110,7 @@ body {
 }
 
 .services-item-text {
-    color:  #262626;
+    color: #262626;
     font-size: 20px;
     font-weight: 700;
     margin-bottom: 0;
@@ -117,31 +125,17 @@ body {
     background-color: #ffe92f;
 }
 
-.gallery-header {
-    color:  #262626;
-    font-size: 90px;
-    font-weight: 700;
-}
-
-.gallery-paragraph {
-    color:  #262626;
-    font-size: 17px;
-    font-weight: 300;
-    max-width: 577px;
-    margin: 0 auto;
-}
-
-.gallery-image {
-    width: 100%;
-}
-
 .button-blue {
-   background-color: #5585a2;
+    background-color: #5585a2;
 }
 
 .button-green {
     background-color: #96b92c;
- }
+}
+
+.button-raspberry {
+    background-color: #f72b3b;
+}
 
 .button-uppercase {
     text-transform: uppercase;
@@ -155,19 +149,19 @@ body {
 }
 
 .subscribe-heading {
-    color:  #262626;
+    color: #262626;
     font-size: 40px;
     font-weight: 700;
 }
 
 .subscribe-paragraph {
     max-width: 540px;
-    color:  #262626;
+    color: #262626;
     font-size: 17px;
     font-weight: 300;
 }
 
-input[type=email] {
+.subscribe-email {
     flex: 1;
     border: 1px solid #262626;
     height: 55px;
@@ -178,19 +172,6 @@ input[type=email] {
     background-color: #b07cf7;
 }
 
-.blog-heading {
-    color:  #ffffff;
-    font-size: 90px;
-    font-weight: 700;
-}
-
-.blog-paragraph {
-    color:  #ffffff;
-    font-size: 17px;
-    font-weight: 300;
-    max-width: 563px;
-}
-
 .date {
     top: 30px;
     left: 40px;
@@ -198,14 +179,16 @@ input[type=email] {
 
 .image-text {
     color: #fff;
-    max-width: 300px;
+    max-width: 260px;
     bottom: 10px;
     left: 40px;
 }
 
+
+
 .image-text-bold {
-    color:  #ffffff;
-    font-size: 20px;
+    color: #ffffff;
+    font-size: 18px;
     font-weight: 700;
 }
 
@@ -213,17 +196,16 @@ input[type=email] {
     background-image: url("img/contact-background.png");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
 }
 
 .contact-heading {
-    color:  #262626;
+    color: #262626;
     font-size: 90px;
     font-weight: 700;
 }
 
 .contact-text {
-    color:  #262626;
+    color: #262626;
     font-size: 17px;
     font-weight: 300;
     max-width: 360px;
@@ -231,7 +213,7 @@ input[type=email] {
 }
 
 .contact-text-bold {
-    color:  #262626;
+    color: #262626;
     font-size: 17px;
     font-weight: 700;
     text-transform: uppercase;
@@ -239,16 +221,6 @@ input[type=email] {
 
 .contact-text-light {
     font-weight: 300;
-}
-
-input, select, textarea {
-    background-color: rgba(0, 196, 196, 0.5);
-    border: none;
-}
-
-input, textarea {
-    max-width: 500px;
-    height: 50px;
 }
 
 .form-control {
@@ -261,23 +233,38 @@ input, textarea {
     border-radius: 0;
     margin-top: 15px;
     transition: 0.3s;
-    color: white;
-    outline: none; 
 }
 
-.form-control:hover, 
+.form-control:hover,
 .form-control:focus {
     font-weight: bold;
-    background-color: rgba(0, 196, 196, 0.5);
+    background-color: rgba(8, 128, 128, 0.5);
+    color: #fff;
 }
 
 .form-control:focus {
-    border-left: 4px solid  #355b82; 
-    outline: none; 
+    border-left: 4px solid #355b82;
+    box-shadow: none;
 }
 
-input[type=email] {
-    border: none;
+.form-control::-webkit-input-placeholder {
+    color: #fff;
+}
+
+.form-control::-moz-placeholder {
+    color: #fff;
+}
+
+.form-control::-ms-input-placeholder {
+    color: #fff;
+}
+
+.form-control::-moz-placeholder {
+    color: #fff;
+}
+
+textarea {
+    height: 200px;
 }
 
 .footer {
@@ -286,7 +273,7 @@ input[type=email] {
 }
 
 .copyright {
-    color:  #b9b9b9;
+    color: #b9b9b9;
     font-size: 16px;
     font-weight: 300;
     margin: 0;
@@ -308,20 +295,3 @@ input[type=email] {
 .pink {
     color: #f72b3b;
 }
-
-.full-height {
-    height: 100%;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
